@@ -1,0 +1,57 @@
+$coul-fond: rgb(87, 156, 135);
+$coul-police: rgb(252, 202, 70);
+
+html{
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: $coul-fond;
+    margin-bottom: 20px;
+}
+
+header img{
+    width: 300px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div img {
+    width: 350px;
+    margin: 20px;
+    box-shadow: 6px 6px 6px rgba($color: grey, $alpha: 0.2);
+    box-decoration-break: round($number: 0);
+    box-shadow: -6px -6px 6px rgba($color: grey, $alpha: 0.2);
+}
+
+#btn-prochainement h1{
+    width: 300px;
+    background-color: $coul-fond;
+    font-weight: normal;
+    color: $coul-police;
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: $coul-fond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+    font-size: 1.4em;
+}
+
+footer a{
+    text-decoration: none;
+}
