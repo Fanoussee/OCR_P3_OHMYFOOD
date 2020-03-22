@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleAccueil.css">
         <title>ohmyfood</title>
     </head>
 
     <body>
 
-        <!--Contient le logo de l'entreprise ohmyfood-->
+        <!--En-tête : contient le logo de l'entreprise ohmyfood-->
         <header>
             <img src="img/logo.png" alt="logo de OhMyFood"/>
         </header>
@@ -19,11 +19,15 @@
         <section>
 
             <div>
-                <img src="img/imgResto1.png" alt= "La note enchantée"/>
+                <a href="noteEnchantee.html">
+                    <img class="image_restaurant" src="img/noteEnchantee/imgResto1.png" alt= "La note enchantée"/>
+                </a>
             </div>
 
             <div>
-                <img src="img/imgResto2.png" alt="Le chic à la Française"/>
+                <a href="chicAlaFrancaise.html">
+                    <img class="image_restaurant" src="img/chicAlaFrancaise/imgResto2.png" alt="Le chic à la Française"/>
+                </a>
             </div>
 
         </section>
@@ -33,28 +37,41 @@
         <section>
 
             <div>
-                <img src="img/imgResto3.png" alt="Le délice des papilles"/>
+                <a href="deliceDesPapilles.html">
+                    <img class="image_restaurant" src="img/deliceDesPapilles/imgResto3.png" alt="Le délice des papilles"/>
+                </a>
             </div>
 
-            <div>
-                <img src="img/imgResto4.png" alt="La palette du goût"/>
+            <div>  
+                <a href="paletteDuGout.html">
+                    <img class="image_restaurant" src="img/paletteDuGout/imgResto4.png" alt="La palette du goût"/>
+                </a>
             </div>
 
         </section>
 
         <!--3e section : le bouton Prochainement-->
         <section id="btn-prochainement">
-            <h1>Prochainement</h1>
+            <a href="prochainement.html">
+                <h1>Prochainement</h1>
+            </a>
         </section>
 
+        <!--Pied de page : lien vers les mentions légales et l'adresse mail de l'entreprise-->
         <footer>
-            <div>
-                <a href="mentionsLegales.html">Mentions légales</a>
-            </div>
+ 
+            <div id="piedDePage">
+ 
+                <div>
+                    <a href="mentionsLegales.html">Mentions légales</a>
+                </div>
+    
+                <div>
+                    <a href="mailto:ohmyfood@gmail.com">Contactez-nous</a>
+                </div>
 
-            <div>
-                <a href="mailto:ohmyfood@gmail.com">Contactez-nous</a>
             </div>
+            
             
         </footer>
 

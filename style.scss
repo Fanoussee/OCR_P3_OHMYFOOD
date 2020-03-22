@@ -1,9 +1,13 @@
-$coul-fond: rgb(87, 156, 135);
 $coul-police: rgb(252, 202, 70);
+$coul-fond: rgb(87, 156, 135);
+$coul-chicAlaFrancaise:rgb(255, 245, 254);
+$coul-deliceDesPapilles: rgb(249,249,249);
+$coul-paletteDuGout: rgb(253, 255, 253);
 
-html{
-    margin: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+/*Mises en forme communes à toutes les pages*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
 header{
@@ -23,35 +27,65 @@ section{
     justify-content: center;
 }
 
-div img {
-    width: 350px;
-    margin: 20px;
-    box-shadow: 6px 6px 6px rgba($color: grey, $alpha: 0.2);
-    box-decoration-break: round($number: 0);
-    box-shadow: -6px -6px 6px rgba($color: grey, $alpha: 0.2);
-}
-
-#btn-prochainement h1{
-    width: 300px;
-    background-color: $coul-fond;
-    font-weight: normal;
-    color: $coul-police;
-    font-size: 2em;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px;
-}
-
 footer{
     background-color: $coul-fond;
+    padding: 20px;
+    font-size: 1.4em;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#piedDePage{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 10px 20px;
-    font-size: 1.4em;
 }
 
-footer a{
+a{
     text-decoration: none;
+    color: $coul-police;
+}
+
+.titreRestaurant{
+    font-size: 2em;
+    color: black;
+}
+
+.categorie{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titre_categorie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 1.3em;
+    margin: 0px;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+.prix{
+    font-weight: bold;
+}
+
+.plats_prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 5px 0px 5px;
 }

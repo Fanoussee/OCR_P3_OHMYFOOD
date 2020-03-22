@@ -123,4 +123,21 @@ p {
   margin: 0px;
   padding: 0px 5px 0px 5px;
 }
-/*# sourceMappingURL=style.css.map */
+
+div img {
+  width: 350px;
+  margin: 20px;
+}
+
+#btn-prochainement h1 {
+  width: 300px;
+  background-color: #579c87;
+  font-weight: normal;
+  color: #fcca46;
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=styleAccueil.css.map */
