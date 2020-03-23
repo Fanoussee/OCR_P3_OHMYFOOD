@@ -1,0 +1,51 @@
+@import 'style';
+
+$coul-texte-entrees: rgb(198, 116, 18);
+$coul-texte-plats: rgb(165, 103, 153);
+$coul-texte-desserts : rgb(110, 76, 204);
+$coul-fond:rgb(255, 245, 254);
+
+#chicAlaFrancaise{
+    background-color: $coul-fond;
+    font-family: 'Cambria', Arial, Helvetica, sans-serif;
+}
+
+#imageTitreChic{
+    margin-top: 50px;
+    width: 400px;
+}
+
+.sepChicAlaFrancaise{
+    height: 20px;
+    flex: 1;
+}
+
+h2{
+    font-size: 1.2em;
+    min-width: 200px;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+p{
+    font-size: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#entrees{
+    color: $coul-texte-entrees;
+}
+
+#plats{
+    color: $coul-texte-plats;
+}
+
+#desserts{
+    color: $coul-texte-desserts;
+}
+
+#footerChicAlaFrancaise{
+    width: 250px;
+    margin: 50px 0px 50px 0px;
+}

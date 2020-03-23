@@ -3,6 +3,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
+  text-align: center;
 }
 
 header {
@@ -14,19 +15,6 @@ header {
 
 header img {
   width: 300px;
-}
-
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer {
@@ -60,23 +48,8 @@ a {
   color: #fcca46;
 }
 
-.titreRestaurant {
-  font-size: 2em;
-  color: black;
-}
-
-.categorie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-.titre_categorie {
+/*Mise en forme de la page d'accueil*/
+#sectionRestaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,52 +57,28 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-h2 {
-  font-size: 1.3em;
-  margin: 0px;
-}
-
-p {
-  font-size: 0.8em;
-}
-
-.prix {
-  font-weight: bold;
-}
-
-.plats_prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px;
-  padding: 0px 5px 0px 5px;
-}
-
-div img {
+.imgRestaurants {
   width: 350px;
   margin: 20px;
 }
 
-#btn-prochainement h1 {
+#btn-prochainement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#titreProchainement {
   width: 300px;
   background-color: #579c87;
   font-weight: normal;

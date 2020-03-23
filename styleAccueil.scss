@@ -1,11 +1,24 @@
 @import 'style';
 
-div img {
+/*Mise en forme de la page d'accueil*/
+
+#sectionRestaurants{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgRestaurants {
     width: 350px;
     margin: 20px;
 }
 
-#btn-prochainement h1{
+#btn-prochainement{
+    display: flex;
+    justify-content: center;
+}
+
+#titreProchainement{
     width: 300px;
     background-color: $coul-fond;
     font-weight: normal;

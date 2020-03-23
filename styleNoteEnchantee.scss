@@ -9,11 +9,6 @@ $coul-fond:rgb(253, 224, 220);
     color: $coul-texte;
     background-color: $coul-fond;
     font-family: 'Segoe Print', Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 100px 150px 100px;
-    padding: 0px 70px 0px 70px;
 }
 
 #imgNoteMusique{
@@ -22,12 +17,23 @@ $coul-fond:rgb(253, 224, 220);
 }
 
 #imgTitreNoteEnchantee{
-    width: 200px;
+    width: 250px;
 }
 
 .sepNoteEnchantee{
-    width: 190px;
     height: 20px;
+    flex: 1;
+}
+
+h2{
+    font-size: 1.3em;
+    margin: 0px 20px 0px 20px;
+    min-width: 200px;
+    text-align: center;
+}
+
+p{
+    font-size: 0.8em;
 }
 
 #footerNoteEnchantee{

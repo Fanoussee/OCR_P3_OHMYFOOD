@@ -1,0 +1,37 @@
+@import 'style';
+
+$coul-texte: black;
+$coul-fond: rgb(253, 255, 253);
+
+#paletteDuGout{
+    color: $coul-texte;
+    background-color: $coul-fond;
+    font-family: 'Segoe Print', Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+#imagePaletteDuGout{
+    width: 500px;
+}
+
+.sepPaletteDuGout{
+    flex: 1;
+    height: 20px;
+}
+
+h2{
+    font-size: 1.2em;
+    margin: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 0.9em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#footerPaletteDuGout{
+    width: 300px;
+    margin: 50px 0px 50px 0px;
+}

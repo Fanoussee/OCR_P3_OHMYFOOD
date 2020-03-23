@@ -1,8 +1,5 @@
 $coul-police: rgb(252, 202, 70);
 $coul-fond: rgb(87, 156, 135);
-$coul-chicAlaFrancaise:rgb(255, 245, 254);
-$coul-deliceDesPapilles: rgb(249,249,249);
-$coul-paletteDuGout: rgb(253, 255, 253);
 
 /*Mises en forme communes à toutes les pages*/
 body{
@@ -19,12 +16,6 @@ header{
 
 header img{
     width: 300px;
-}
-
-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 footer{
@@ -49,9 +40,19 @@ a{
     color: $coul-police;
 }
 
+/*Mises en forme communes aux pages des restaurants*/
 .titreRestaurant{
     font-size: 2em;
     color: black;
+    text-align: center;
+}
+
+.sectionMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px 150px 100px;
+    padding: 0px 70px 0px 70px;
 }
 
 .categorie{
@@ -68,17 +69,9 @@ a{
     margin-top: 50px;
 }
 
-h2{
-    font-size: 1.3em;
-    margin: 0px;
-}
-
-p{
-    font-size: 0.8em;
-}
-
 .prix{
     font-weight: bold;
+    text-align: right;
 }
 
 .plats_prix{
@@ -87,5 +80,4 @@ p{
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 0px 5px 0px 5px;
 }

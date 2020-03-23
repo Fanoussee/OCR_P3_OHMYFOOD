@@ -119,23 +119,17 @@ a {
   margin: 0px;
 }
 
-/*Mise en forme de la page de la note enchantée*/
-#noteEnchantee {
-  color: #3d1319;
-  background-color: #fde0dc;
-  font-family: 'Segoe Print', Arial, Helvetica, sans-serif;
+#chicAlaFrancaise {
+  background-color: #fff5fe;
+  font-family: 'Cambria', Arial, Helvetica, sans-serif;
 }
 
-#imgNoteMusique {
-  width: 80px;
-  margin: 50px 0px 10px 0px;
+#imageTitreChic {
+  margin-top: 50px;
+  width: 400px;
 }
 
-#imgTitreNoteEnchantee {
-  width: 250px;
-}
-
-.sepNoteEnchantee {
+.sepChicAlaFrancaise {
   height: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -143,37 +137,32 @@ a {
 }
 
 h2 {
-  font-size: 1.3em;
-  margin: 0px 20px 0px 20px;
+  font-size: 1.2em;
   min-width: 200px;
   text-align: center;
+  margin: 0px 20px 0px 20px;
 }
 
 p {
-  font-size: 0.8em;
+  font-size: 1em;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-#footerNoteEnchantee {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#entrees {
+  color: #c67412;
+}
+
+#plats {
+  color: #a56799;
+}
+
+#desserts {
+  color: #6e4ccc;
+}
+
+#footerChicAlaFrancaise {
+  width: 250px;
   margin: 50px 0px 50px 0px;
 }
-
-#img2NoteMusique {
-  width: 40px;
-  margin: 0px;
-}
-
-#img2TitreNoteEnchantee {
-  width: 180px;
-  margin: 0px;
-}
-/*# sourceMappingURL=styleNoteEnchantee.css.map */
+/*# sourceMappingURL=styleChicAlaFrancaise.css.map */
