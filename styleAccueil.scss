@@ -16,10 +16,12 @@
 #btn-prochainement{
     display: flex;
     justify-content: center;
+    &:hover #ptSuspension{
+    }
 }
 
 #titreProchainement{
-    width: 300px;
+    width: 400px;
     background-color: $coul-fond;
     font-weight: normal;
     color: $coul-police;
@@ -28,4 +30,8 @@
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 100px;
+}
+
+#ptSuspension{
+    display: none;
 }

@@ -16,6 +16,17 @@ header img {
   width: 300px;
 }
 
+h2 {
+  font-size: 1.2em;
+  min-width: 200px;
+  margin: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
 footer {
   background-color: #579c87;
   padding: 20px;
@@ -134,13 +145,6 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-h2 {
-  font-size: 1.2em;
-  min-width: 200px;
-  text-align: center;
-  margin: 0px 20px 0px 20px;
 }
 
 p {

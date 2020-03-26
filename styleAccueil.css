@@ -3,7 +3,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  text-align: center;
 }
 
 header {
@@ -48,6 +47,89 @@ a {
   color: #fcca46;
 }
 
+/*Mises en forme communes aux pages des restaurants*/
+.titreRestaurant {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+
+.sectionMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 100px 150px 100px;
+  padding: 0px 70px 0px 70px;
+}
+
+.categorie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.titre_categorie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.2em;
+  min-width: 200px;
+  margin: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+.prix {
+  font-weight: bold;
+  text-align: right;
+}
+
+.plats_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+}
+
 /*Mise en forme de la page d'accueil*/
 #sectionRestaurants {
   display: -webkit-box;
@@ -79,7 +161,7 @@ a {
 }
 
 #titreProchainement {
-  width: 300px;
+  width: 400px;
   background-color: #579c87;
   font-weight: normal;
   color: #fcca46;
@@ -88,5 +170,9 @@ a {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 100px;
+}
+
+#ptSuspension {
+  display: none;
 }
 /*# sourceMappingURL=styleAccueil.css.map */
