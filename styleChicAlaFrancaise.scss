@@ -15,9 +15,16 @@ $coul-fond:rgb(255, 245, 254);
     width: 400px;
 }
 
-.sepChicAlaFrancaise{
-    height: 20px;
-    flex: 1;
+#entrees h2 .soulignement{
+    background-color: $coul-texte-entrees;
+}
+
+#plats h2 .soulignement{
+    background-color: $coul-texte-plats;
+}
+
+#desserts h2 .soulignement{
+    background-color: $coul-texte-desserts;
 }
 
 p{

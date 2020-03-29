@@ -8,16 +8,29 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.imgRestaurants {
-    width: 350px;
+
+.cadre_zoom{
+    width: 400px;
+    height: 600px;
+    border: 8px solid rgba(128, 128, 128, 0.05);
+    border-radius: 5px;
+    display: inline;
+    overflow: hidden;
     margin: 20px;
+}
+
+.imgRestaurants {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms;
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 
 #btn-prochainement{
     display: flex;
     justify-content: center;
-    &:hover #ptSuspension{
-    }
 }
 
 #titreProchainement{
@@ -30,8 +43,36 @@
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 100px;
+    &:hover #point1 {
+        display: inline;
+        animation: suspension 1.7s infinite;
+    }
+    &:hover #point2{
+        display: inline;
+        animation: suspension 1.7s 0.2s infinite;
+    }
+    &:hover #point3{
+        display: inline;
+        animation: suspension 1.7s 0.4s infinite;
+    }
 }
 
-#ptSuspension{
+.points{
+    opacity: 0;
     display: none;
+}
+
+@keyframes suspension{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
 }

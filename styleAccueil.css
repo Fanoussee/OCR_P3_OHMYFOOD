@@ -47,6 +47,105 @@ a {
   color: #fcca46;
 }
 
+.lien_effet_wiggle:hover {
+  -webkit-animation: wiggle 400ms ease-in-out;
+          animation: wiggle 400ms ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  10% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  20% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  30% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  40% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  50% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  60% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  70% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  80% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  90% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(-4%);
+            transform: translateX(-4%);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  10% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  20% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  30% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  40% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  50% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  60% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  70% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  80% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  90% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(-4%);
+            transform: translateX(-4%);
+  }
+}
+
 /*Mises en forme communes aux pages des restaurants*/
 .titreRestaurant {
   font-size: 2em;
@@ -97,15 +196,41 @@ a {
   margin-top: 50px;
 }
 
-h2 {
-  font-size: 1.2em;
-  min-width: 200px;
-  margin: 0px 20px 0px 20px;
-  text-align: center;
+.separateur {
+  height: 20px;
+  width: 590px;
 }
 
-h2:hover {
-  text-decoration: underline;
+.separateurDebut {
+  margin-right: 50px;
+}
+
+.separateurFin {
+  margin-left: 50px;
+}
+
+h2 {
+  font-size: 1.2em;
+  width: auto;
+  margin: 0px 20px 0px 20px;
+  text-align: center;
+  cursor: default;
+}
+
+h2:hover .soulignement {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.soulignement {
+  width: auto;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .prix {
@@ -146,9 +271,26 @@ h2:hover {
           justify-content: center;
 }
 
-.imgRestaurants {
-  width: 350px;
+.cadre_zoom {
+  width: 400px;
+  height: 600px;
+  border: 8px solid rgba(128, 128, 128, 0.05);
+  border-radius: 5px;
+  display: inline;
+  overflow: hidden;
   margin: 20px;
+}
+
+.imgRestaurants {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.imgRestaurants:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #btn-prochainement {
@@ -172,7 +314,56 @@ h2:hover {
   margin-bottom: 100px;
 }
 
-#ptSuspension {
+#titreProchainement:hover #point1 {
+  display: inline;
+  -webkit-animation: suspension 1.7s infinite;
+          animation: suspension 1.7s infinite;
+}
+
+#titreProchainement:hover #point2 {
+  display: inline;
+  -webkit-animation: suspension 1.7s 0.2s infinite;
+          animation: suspension 1.7s 0.2s infinite;
+}
+
+#titreProchainement:hover #point3 {
+  display: inline;
+  -webkit-animation: suspension 1.7s 0.4s infinite;
+          animation: suspension 1.7s 0.4s infinite;
+}
+
+.points {
+  opacity: 0;
   display: none;
+}
+
+@-webkit-keyframes suspension {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes suspension {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=styleAccueil.css.map */
