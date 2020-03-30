@@ -14,7 +14,6 @@
     height: 600px;
     border: 8px solid rgba(128, 128, 128, 0.05);
     border-radius: 5px;
-    display: inline;
     overflow: hidden;
     margin: 20px;
 }
@@ -74,5 +73,22 @@
     }
     100%{
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .cadre_zoom{
+        width: 250px;
+        height: 350px;
+    }
+    .imgRestaurants{
+        &:hover{
+            transform: scale(1.2);
+
+        }
+    }
+    #titreProchainement{
+        width: 250px;
+        font-size: 1.5em;
     }
 }

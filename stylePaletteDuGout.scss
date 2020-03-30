@@ -28,3 +28,16 @@ p{
     width: 300px;
     margin: 50px 0px 50px 0px;
 }
+
+@media screen and (max-width: 700px){
+    #imagePaletteDuGout{
+        width: 300px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #footerPaletteDuGout{
+        width: 200px;
+    }
+}

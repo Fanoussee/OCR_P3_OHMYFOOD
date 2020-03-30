@@ -28,3 +28,16 @@ p{
     width: 300px;
     margin: 50px 0px 50px 0px;
 }
+
+@media screen and (max-width: 700px){
+    #imageTitreDelice{
+        width: 300px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #footerDeliceDesPapilles{
+        width: 200px;
+    }
+}

@@ -44,3 +44,22 @@ p{
     width: 180px;
     margin: 0px;
 }
+
+@media screen and (max-width: 700px){
+    #imgNoteMusique{
+        width: 40px;
+    }
+    #imgTitreNoteEnchantee{
+        width: 200px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #img2NoteMusique{
+        width: 20px;
+    }
+    #img2TitreNoteEnchantee{
+        width: 130px;
+    }
+}

@@ -15,22 +15,20 @@ $coul-fond:rgb(255, 245, 254);
     width: 400px;
 }
 
-#entrees h2 .soulignement{
+#entrees .titre_souligne .soulignement{
     background-color: $coul-texte-entrees;
 }
 
-#plats h2 .soulignement{
+#plats .titre_souligne .soulignement{
     background-color: $coul-texte-plats;
 }
 
-#desserts h2 .soulignement{
+#desserts .titre_souligne .soulignement{
     background-color: $coul-texte-desserts;
 }
 
 p{
     font-size: 1em;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 #entrees{
@@ -48,4 +46,14 @@ p{
 #footerChicAlaFrancaise{
     width: 250px;
     margin: 50px 0px 50px 0px;
+}
+
+@media screen and (max-width: 700px){
+    #imageTitreChic{
+        width: 300px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

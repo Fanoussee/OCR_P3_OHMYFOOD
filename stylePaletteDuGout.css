@@ -233,11 +233,6 @@ h2:hover .soulignement {
   transition: all 400ms ease-in-out;
 }
 
-.prix {
-  font-weight: bold;
-  text-align: right;
-}
-
 .plats_prix {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,10 +244,99 @@ h2:hover .soulignement {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0px;
+}
+
+.libelles_plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  margin-left: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*Mise en page en fonction de différentes tailles d'écran*/
+@media screen and (max-width: 1350px) {
+  .sectionMenu {
+    margin: 50px 50px 100px 50px;
+    padding: 0px;
+  }
+  .titre_categorie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .separateur {
+    width: auto;
+  }
+  .separateurDebut {
+    margin-right: 0px;
+  }
+  .separateurFin {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .titreRestaurant {
+    font-size: 1.5em;
+  }
+  .sectionMenu {
+    margin: 20px 20px 100px 20px;
+    padding: 0px;
+  }
+  header img {
+    width: 200px;
+  }
+  #imageTitreChic {
+    width: 200px;
+  }
+  .libelles_plats {
+    margin-left: 10px;
+  }
+  .prix {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titreRestaurant {
+    font-size: 1em;
+  }
+  footer {
+    font-size: 1em;
+  }
 }
 
 #paletteDuGout {
@@ -279,5 +363,18 @@ p {
 #footerPaletteDuGout {
   width: 300px;
   margin: 50px 0px 50px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  #imagePaletteDuGout {
+    width: 300px;
+  }
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footerPaletteDuGout {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=stylePaletteDuGout.css.map */
