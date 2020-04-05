@@ -348,16 +348,28 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
+}
+
+.groupe_menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cadre_zoom {
-  width: 400px;
-  height: 600px;
+  width: 350px;
+  height: 500px;
   border: 8px solid rgba(128, 128, 128, 0.05);
   border-radius: 5px;
   overflow: hidden;
@@ -450,10 +462,32 @@ a {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: 1650px) {
+  .groupe_menus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .cadre_zoom {
-    width: 250px;
-    height: 350px;
+    width: 400px;
+    height: 600px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .cadre_zoom {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  #sectionRestaurants {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .imgRestaurants:hover {
     -webkit-transform: scale(1.2);
