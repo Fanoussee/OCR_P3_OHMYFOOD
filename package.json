@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fanoussee/OCR_P3_OHMYFOOD.git"
+  },
+  "author": "Stéphanie TARDIEU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fanoussee/OCR_P3_OHMYFOOD/issues"
+  },
+  "homepage": "https://github.com/Fanoussee/OCR_P3_OHMYFOOD#readme",
+  "description": "",
+  "browserslist":"last 4 versions"
+}

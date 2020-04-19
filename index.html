@@ -4,65 +4,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styleAccueil.css">
+        <link rel="stylesheet" href="./public/css/style.css">
+        <script src="https://kit.fontawesome.com/1dcabc1971.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
     </head>
 
     <body>
 
-        <!--En-tête : contient le logo de l'entreprise ohmyfood-->
+        <!--En-tête : contient le titre de l'entreprise ohmyfood-->
         <header>
-            <img src="img/logo.png" alt="logo de OhMyFood"/>
+            <h1 class="txt-logo">ohmyfood</h1>
         </header>
 
         <!--1ère section : 4 restaurants. 
             La note enchantée et Le chic à la Française.-->
-        <nav id="sectionRestaurants">
-            <div class="groupe_menus">
-                <div class="cadre_zoom">
-                    <a href="noteEnchantee.html">
-                        <img class="imgRestaurants" src="img/noteEnchantee/imgResto1.png" alt= "La note enchantée"/>
+        <nav>
+            <div class="resto">
+                <div class="resto __cadre --note">
+                    <a href="/pages/noteEnchantee.html">
+                        <i class="fas fa-music"></i>
+                        <h2>La note enchantée</h2>
+                        <h3>Menu</h3>
                     </a>
                 </div>
-                <div class="cadre_zoom">
-                    <a href="chicAlaFrancaise.html">
-                        <img class="imgRestaurants" src="img/chicAlaFrancaise/imgResto2.png" alt="Le chic à la Française"/>
+                <div class="resto __cadre --chic">
+                    <a href="/pages/chicAlaFrancaise.html">
+                        <h2>Le chic à la française</h2>
+                        <h3>Menu</h3>
                     </a>
                 </div>
             </div>
-            <div class="groupe_menus">
-                <div class="cadre_zoom">
-                    <a href="deliceDesPapilles.html">
-                        <img class="imgRestaurants" src="img/deliceDesPapilles/imgResto3.png" alt="Le délice des papilles"/>
+            <div class="resto">
+                <div class="resto __cadre --delice">
+                    <a href="/pages/deliceDesPapilles.html">
+                        <h2>Le délice des papilles</h2>
+                        <h3>Menu</h3>
                     </a>
                 </div>
-                <div class="cadre_zoom">
-                    <a href="paletteDuGout.html">
-                        <img class="imgRestaurants" src="img/paletteDuGout/imgResto4.png" alt="La palette du goût"/>
+                <div class="resto __cadre --palette">
+                    <a href="/pages/paletteDuGout.html">
+                        <h2>La palette du goût</h2>
+                        <h3>Menu</h3>
                     </a>
                 </div>
             </div>
         </nav>
 
         <!--2e section : le bouton Prochainement-->
-        <section id="btn-prochainement">
-            <a href="prochainement.html">
-                <h1 id="titreProchainement">Prochainement
+        <section class="emplacement-bouton">
+            <a class="bouton" href="/pages/prochainement.html">
+                <h2>Prochainement
                     <span class="points" id="point1">.</span>
                     <span class="points" id="point2">.</span>
                     <span class="points" id="point3">.</span>
-                </h1>
+                </h2>
             </a>
         </section>
 
         <!--Pied de page : lien vers les mentions légales et l'adresse mail de l'entreprise-->
         <footer>
- 
-            <div id="piedDePage">
-                    <a class="lien_effet_wiggle" href="mentionsLegales.html">Mentions légales</a>
-                    <a class="lien_effet_wiggle" href="mailto:ohmyfood@gmail.com">Contactez-nous</a>
+            <div class="liens">
+                    <a href="/pages/mentionsLegales.html">Mentions légales</a>
+                    <a href="mailto:ohmyfood@gmail.com">Contactez-nous</a>
             </div>
-            
         </footer>
 
     </body>
