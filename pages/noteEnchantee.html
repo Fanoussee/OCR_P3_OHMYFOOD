@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/public/css/style.css">
+        <script src="https://kit.fontawesome.com/1dcabc1971.js" crossorigin="anonymous"></script>
         <title>La note enchantée</title>
     </head>
 
@@ -17,33 +18,26 @@
 
         <!--1ère section : Le titre du restaurant-->
         <section>
-            <h2 class="titreRestaurant">La note enchantée</h2>
+            <h2 class="titrePage">La note enchantée</h2>
         </section>
 
         <!--2e section : Le menu-->
-        <div class="sectionMenu" id="noteEnchantee">
+        <div class="sectionMenu note">
 
             <!--Boîte supplémentaire contenant la note de musique-->
             <div>
-                <img id="imgNoteMusique" src="/img/noteEnchantee/logoNoteMusique.png" alt="La note de musique du logo du restaurant La note enchantée"/>
+                <i class="fas fa-music"></i>
             </div>
 
             <!--1ère boîte : le logo du restaurant-->
-            <div>
-                <img id="imgTitreNoteEnchantee" src="/img/noteEnchantee/logoNoteEnchantee.png" alt="Le logo du restaurant La note enchantée"/>
-            </div>
+            <h3 class="nom-resto">La note enchantée</h3>
 
             <div class="categorie">
                 <!--2ème boîte : le titre des entrées-->
-                <div class="titre_categorie">
-                    <!--Séparateur de début-->
-                    <img class="separateur separateurDebut" src="/img/noteEnchantee/SepDebutM1.png" alt="liseret décoratif"/>
-                    <div class="titre_souligne">
-                        Prélude
-                        <div class="soulignement"></div>
-                    </div>
-                    <!--Séparateur de fin-->
-                    <img class="separateur separateurFin" src="/img/noteEnchantee/SepFinM1.png" alt="liseret décoratif"/>
+                <div class="categorie titre">
+                    <img class="separateur --debut" src="/img/noteEnchantee/SepDebutM1.png" alt="liseret décoratif"/>
+                    <div class="titre-souligne">Prélude<div class="--soulignement"></div></div>
+                    <img class="separateur --fin" src="/img/noteEnchantee/SepFinM1.png" alt="liseret décoratif"/>
                 </div>
             
                 <!--3ème boîte-->
@@ -70,14 +64,9 @@
 
             <div class="categorie">
                 <!--4ème boîte : le titre des plats-->
-                <div class="titre_categorie">
-                    <!--Séparateur de début-->
+                <div class="categorie titre">
                     <img class="separateur separateurDebut" src="/img/noteEnchantee/SepDebutM1.png" alt="liseret décoratif"/>
-                    <div class="titre_souligne">
-                        Point d'orgue
-                        <div class="soulignement"></div>
-                    </div>
-                    <!--Séparateur de fin-->
+                    <div class="titre-souligne">Point d'orgue<div class="--soulignement"></div></div>
                     <img class="separateur separateurFin" src="/img/noteEnchantee/SepFinM1.png" alt="liseret décoratif"/>
                 </div>
             
@@ -105,15 +94,9 @@
 
             <div class="categorie">
                 <!--6ème boîte : le titre des desserts-->
-                <div class="titre_categorie">
-                    <!--Séparateur de début-->
+                <div class="categorie titre">
                     <img class="separateur separateurDebut" src="/img/noteEnchantee/SepDebutM1.png" alt="liseret décoratif"/>
-                    <div class="titre_souligne">
-                        Mouvement final
-                        <div class="soulignement"></div>
-                    </div>
-                    
-                    <!--Séparateur de fin-->
+                    <div class="titre-souligne">Mouvement final<div class="--soulignement"></div></div>
                     <img class="separateur separateurFin" src="/img/noteEnchantee/SepFinM1.png" alt="liseret décoratif"/>
                 </div>
 
@@ -136,9 +119,9 @@
             </div>
 
             <!--Boîte de la note de musique et du logo du restaurant-->
-            <div id="footerNoteEnchantee">
-                <img id="img2NoteMusique" src="/img/noteEnchantee/logoNoteMusique.png" alt="La note de musique du logo du restaurant La note enchantée"/>
-                <img id="img2TitreNoteEnchantee" src="/img/noteEnchantee/logoNoteEnchantee.png" alt="Le logo du restaurant La note enchantée"/>
+            <div class="footerNote">
+                <i class="fas fa-music"></i>
+                <h3 class="nom-resto">La note enchantée</h3>
             </div>
           
         </div>

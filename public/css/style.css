@@ -7,10 +7,6 @@
   src: url("/fonts//note/Devonshire-Regular.ttf");
 }
 @font-face {
-  font-family: "font-menu";
-  src: url("/fonts//note/STRFRH__.ttf");
-}
-@font-face {
   font-family: "font-delice";
   src: url("/fonts/delice/AdageScriptJF.ttf");
 }
@@ -67,13 +63,102 @@
     opacity: 0;
   }
 }
-/*Mise en forme de la page d'accueil*/
+/*Mises en forme communes sur tout le site*/
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: normal;
+}
+
+h1, h2, h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+header, footer, .bouton {
+  background-color: #579c87;
+  padding: 10px;
+  margin: 0px;
+  color: #fcca46;
+}
+
+a {
+  color: #fcca46;
+  text-decoration: none;
+}
+
+i {
+  padding: 0px;
+  margin: 10px;
+}
+
+.txt-logo {
+  font-size: 5em;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .txt-logo {
+    font-size: 3em;
+  }
+}
+
+.titrePage {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  padding: 0px;
+  margin: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  font-size: 1.4em;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 1em;
+  }
+}
+footer .liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .liens a {
+  color: #fcca46;
+}
+footer .liens a:hover {
+  display: inline;
+  animation: secouer 400ms 0s ease-in-out;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 1650px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 nav .resto {
   display: flex;
@@ -82,9 +167,22 @@ nav .resto {
   align-items: center;
   margin-top: 100px;
 }
+@media screen and (max-width: 850px) {
+  nav .resto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 nav .resto h3, nav .resto i {
   font-size: 3em;
   margin-top: 50px;
+}
+@media screen and (max-width: 600px) {
+  nav .resto h3, nav .resto i {
+    font-size: 2em;
+  }
 }
 nav .resto .__cadre {
   display: flex;
@@ -105,16 +203,21 @@ nav .resto .__cadre a:hover {
   transform: scale(1.2);
   opacity: 0.6;
 }
+@media screen and (max-width: 600px) {
+  nav .resto .__cadre {
+    width: 250px;
+    height: 350px;
+  }
+}
 nav .resto .--note {
   background-color: #fde0dc;
 }
 nav .resto .--note i {
   color: #f05662;
-  padding: 10px;
-  margin: 0px;
 }
 nav .resto .--note h2 {
   font-family: "font-note";
+  font-weight: normal;
   color: #3d1319;
   font-size: 2.2em;
 }
@@ -122,7 +225,7 @@ nav .resto .--note h3 {
   text-transform: uppercase;
   color: #3d1319;
   font-style: italic;
-  font-family: "font-menu";
+  font-family: "Segoe Print";
   font-weight: bold;
 }
 nav .resto .--chic {
@@ -144,6 +247,12 @@ nav .resto .--delice h2 {
   font-family: "font-delice";
   color: #0230df;
   font-size: 2em;
+}
+@media screen and (max-width: 600px) {
+  nav .resto .--delice h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
 }
 nav .resto .--delice h3 {
   color: #0230df;
@@ -190,84 +299,274 @@ nav .resto .--palette h3 {
   animation: suspension 1.7s 0.4s infinite;
 }
 
-/*
-@media all and (max-width: 1650px){
-    #sectionRestaurants{
-        flex-direction: column;
-    }
-    .cadre_zoom{
-        width: 400px;
-        height: 600px;
-    }
+/*Mises en forme communes aux pages des restaurants*/
+.nom-resto {
+  margin-top: 20px;
+  font-size: 1.8em;
 }
 
-@media all and (max-width: 950px){
-    .cadre_zoom{
-        width: 300px;
-        height: 450px;
-    }
-}
-
-@media all and (max-width: 750px){
-    #sectionRestaurants{
-        flex-direction: column;
-    }
-    .groupe_menus{
-        flex-direction: column;
-    }
-    #titreProchainement{
-        width: 250px;
-        font-size: 1.5em;
-    }
-}*/
-/*Mises en forme communes sur tout le site*/
-* {
-  padding: 0px;
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-header, footer, .bouton {
-  background-color: #579c87;
-  padding: 20px;
-  margin: 0px;
-  color: #fcca46;
-}
-
-.txt-logo {
-  font-size: 5em;
-  font-weight: bold;
-}
-
-section {
+.sectionMenu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
+  margin: 150px;
+  margin-top: 0px;
+}
+.sectionMenu .categorie {
+  width: 100%;
+  padding: 0px;
+  margin: 20px;
+}
+.sectionMenu .categorie .titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 30px;
+  width: auto;
+}
+.sectionMenu .categorie .titre .titre-souligne {
+  cursor: default;
+  font-size: 1.8em;
+  padding: 0px;
+  margin: 20px;
+}
+.sectionMenu .categorie .titre .titre-souligne .--soulignement {
+  width: auto;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 400ms ease-in-out;
+}
+.sectionMenu .categorie .titre .titre-souligne:hover .--soulignement {
+  transform: scaleX(1);
 }
 
-footer {
-  font-size: 1.4em;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+.separateur {
+  height: 20px;
+  width: 590px;
 }
-footer .liens {
+.separateur --debut {
+  margin-right: 50px;
+}
+.separateur --fin {
+  margin-left: 50px;
+}
+
+.plats_prix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-footer .liens a {
-  color: #fcca46;
+.plats_prix .libelles_plats {
+  margin-left: 50px;
 }
-footer .liens a:hover {
-  display: inline;
-  animation: secouer 400ms 0s ease-in-out;
+.plats_prix .libelles_plats p {
+  text-align: left;
 }
+.plats_prix .prix {
+  margin-right: 50px;
+}
+.plats_prix .prix p {
+  font-weight: bold;
+  text-align: right;
+}
+.plats_prix p {
+  padding: 0px;
+  margin: 10px;
+}
+
+.note {
+  background-color: #fde0dc;
+  color: #3d1319;
+  font-family: "Segoe Print";
+}
+.note i {
+  font-size: 4em;
+  color: #f05662;
+}
+.note .nom-resto {
+  font-family: "font-note";
+  font-size: 3em;
+}
+.note .titre {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.note .--soulignement {
+  background-color: #3d1319;
+}
+
+.footerNote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footerNote i, .footerNote .nom-resto {
+  font-size: 1.8em;
+  padding: 0px;
+  margin: 10px;
+}
+
+/*@media screen and (max-width: 700px){
+    #imgNoteMusique{
+        width: 40px;
+    }
+    #imgTitreNoteEnchantee{
+        width: 200px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #img2NoteMusique{
+        width: 20px;
+    }
+    #img2TitreNoteEnchantee{
+        width: 130px;
+    }
+}*/
+.chic {
+  background-color: #fff5fe;
+  font-family: "font-chic";
+  color: #c67412;
+}
+.chic .nom-resto {
+  font-size: 3em;
+}
+.chic .categorie {
+  font-family: "cambria";
+}
+.chic .categorie .titre {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.chic .categorie p {
+  font-size: 1.2em;
+}
+.chic .entrees .--soulignement {
+  background-color: #c67412;
+}
+.chic .plats {
+  color: #a56799;
+}
+.chic .plats .--soulignement {
+  background-color: #a56799;
+}
+.chic .desserts {
+  color: #6e4ccc;
+}
+.chic .desserts .--soulignement {
+  background-color: #6e4ccc;
+}
+
+.footerChic {
+  font-size: 2em;
+}
+
+/*
+@media screen and (max-width: 700px){
+    #imageTitreChic{
+        width: 300px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}*/
+.delice {
+  background-color: #edefef;
+  font-family: "font-delice";
+  color: #0230df;
+}
+.delice .nom-resto {
+  font-size: 4em;
+  font-weight: normal;
+}
+.delice .categorie {
+  font-family: "Segoe Print";
+  color: black;
+}
+.delice .categorie .titre {
+  font-size: 0.8em;
+}
+.delice .categorie p {
+  font-size: 1.1em;
+}
+.delice .categorie .--soulignement {
+  background-color: black;
+}
+
+.footerDelice {
+  font-size: 2.5em;
+}
+
+/*
+@media screen and (max-width: 700px){
+    #imageTitreDelice{
+        width: 300px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #footerDeliceDesPapilles{
+        width: 200px;
+    }
+}*/
+.palette {
+  background-color: #fdfffd;
+  font-family: "font-palette";
+  color: #43973d;
+}
+.palette .nom-resto {
+  font-size: 4em;
+  font-weight: normal;
+}
+.palette .categorie {
+  color: black;
+  font-family: "Segoe Print";
+}
+.palette .categorie .titre {
+  font-size: 0.8em;
+}
+.palette .categorie .--soulignement {
+  background-color: black;
+}
+
+.footerPalette {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+/*
+@media screen and (max-width: 700px){
+    #imagePaletteDuGout{
+        width: 300px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #footerPaletteDuGout{
+        width: 200px;
+    }
+}
+*/
+/*@media screen and (max-width: 700px){
+    #titreMentionsLegales{
+        font-size: 1em;
+    }
+}*/
+/*@media screen and (max-width: 700px){
+    #titreProchainement{
+        font-size: 1.5em;
+    }
+}*/
 
 /*# sourceMappingURL=style.css.map */
