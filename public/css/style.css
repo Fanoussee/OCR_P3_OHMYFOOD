@@ -1,18 +1,18 @@
 @font-face {
   font-family: "font chic";
-  src: url("../fonts/chic/croissantone-regular.ttf") format("ttf");
+  src: url("./fonts/croissantone-regular.ttf");
 }
 @font-face {
   font-family: "font note";
-  src: url("../fonts/note/Devonshire-Regular.ttf") format("ttf");
+  src: url("./fonts/Devonshire-Regular.ttf");
 }
 @font-face {
   font-family: "font delice";
-  src: url("../fonts/delice/AdageScriptJF.ttf") format("ttf");
+  src: url("./fonts/AdageScriptJF.ttf");
 }
 @font-face {
   font-family: "font palette";
-  src: url("../fonts/palette/KaushanScript-Regular.otf") format("otf");
+  src: url("./fonts/KaushanScript-Regular.otf");
 }
 @keyframes secouer {
   0% {
