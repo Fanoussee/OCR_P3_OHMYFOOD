@@ -1,0 +1,19 @@
+.emplacement-bouton{
+    margin: $marges-bouton;
+}
+.bouton{
+    @include bordureArrondie(1px, solid, map-get($coul-fond, site), 10px);
+    .points{
+        opacity: 0;
+        display: none;
+    }
+    &:hover #point1 {
+        @include animer(suspension, 1.7s, 0s, infinite);
+    }
+    &:hover #point2{
+        @include animer(suspension, 1.7s, 0.2s, infinite);
+    }
+    &:hover #point3{
+        @include animer(suspension, 1.7s, 0.4s, infinite);
+    }
+}

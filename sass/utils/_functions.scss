@@ -1,0 +1,25 @@
+@function reduireTaille($taille){
+    $nouvTaille : $taille * 0.75;
+    @return $nouvTaille;
+    
+}
+
+@function agrandirTaille($taille){
+    @return ($taille + 1);
+}
+
+@function tailleNormale(){
+    @return 1em;
+}
+
+@function styleChicEntrees(){
+    @return map-get($coul-chic, entrees);
+}
+
+@function styleChicPlats(){
+    @return map-get($coul-chic, plats);
+}
+
+@function styleChicDesserts(){
+    @return map-get($coul-chic, desserts);
+}

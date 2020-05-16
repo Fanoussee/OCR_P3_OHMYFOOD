@@ -1,0 +1,25 @@
+.note{
+    @include styleResto(note);
+    .mot-menu{
+        text-transform: uppercase;
+    }
+}
+
+.footerNote{
+    @include flex(row);
+    @include mobile{
+        @include flex(column);
+    }
+}
+
+.chic{
+    @include styleResto(chic);
+}
+
+.delice{
+    @include styleResto(delice);
+}
+
+.palette{
+    @include styleResto(palette);
+}

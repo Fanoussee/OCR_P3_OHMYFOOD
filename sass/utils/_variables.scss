@@ -1,0 +1,159 @@
+$coul-ombre : rgba(161, 157, 157, 0.05);
+$coul-site : rgb(252, 202, 70);
+
+$coul-fond : (
+    site : rgb(87, 156, 135),
+    note : rgb(253, 224, 220),
+    chic : rgb(255, 245, 254),
+    delice : rgb(237,239,239),
+    palette : rgb(253, 255, 253)
+);
+
+$coul-resto : (
+    note : rgb(61, 19, 25),
+    delice : rgb(2, 48, 223),
+);
+
+$coul-music : (
+    coul1 : rgb(240, 86, 98),
+    coul2 : rgb(246, 145, 106)
+);
+
+$coul-chic : (
+    entrees : rgb(198, 116, 18),
+    plats : rgb(165, 103, 153),
+    desserts : rgb(110, 76, 204)
+);
+
+$coul-palette : (
+    coul1 :rgb(67, 151, 61),
+    coul2 : rgb(190, 255, 127)
+);
+
+$coul-menu : (
+    note : rgb(61, 19, 25),
+    chic : rgb(198, 116, 18),
+    delice : rgb(2, 48, 223),
+    palette : rgb(67, 151, 61)
+);
+
+$coul-titre : (
+    note : rgb(61, 19, 25),
+    delice : black,
+    palette : black 
+);
+
+$coul-plats-prix : (
+    note : rgb(61, 19, 25),
+    delice : black,
+    palette : black
+);
+
+$polices-site : Arial, Helvetica, sans-serif;
+
+$police-resto : (
+    note : 'font note',
+    chic : 'font chic',
+    delice : 'font delice',
+    palette : 'font palette'
+);
+
+$police-menu : (
+    note : 'Segoe Print',
+    chic : 'cambria',
+    delice : 'Segoe Print',
+    palette : 'Segoe Print'
+);
+
+$police-titre : (
+    note : 'Segoe Print',
+    chic : 'cambria',
+    delice : 'Segoe Print',
+    palette : 'Segoe Print'
+);
+
+$police-plats-prix : (
+    note : 'Segoe Print',
+    chic : 'cambria',
+    delice : 'Segoe Print',
+    palette : 'Segoe Print'
+);
+
+$dimensions-cadre : (
+    largeur : 350px,
+    hauteur : 500px
+);
+
+$taille-titre-page : 2em;
+
+$taille-nom-resto : (
+    note : 2.5em,
+    chic : 1.5em,
+    delice : 2em,
+    palette : 2em
+);
+
+$taille-music : 4em;
+
+$taille-mot-menu : (
+    note : 3em,
+    chic : 3em,
+    delice : 2.5em,
+    palette : 2.5em
+);
+
+$taille-titre : (
+    note : 1.5em,
+    chic : 1.5em,
+    delice : 1.5em,
+    palette : 1.5em
+);
+
+$dimensions-separateur : (
+    largeur : 38%,
+    hauteur : 20px
+);
+
+$taille-plats-prix : (
+    note : 1.1em,
+    chic : 1.5em,
+    delice : 1.2em,
+    palette : 1.2em
+);
+
+$taille-logo : 5em;
+
+$taille-footer : 1.4em;
+
+$breakpoints : (
+    ordi : 1650px,
+    petitOrdi : 1200px,
+    tablette : 850px,
+    mobile : 600px
+);
+
+$contourLiens : 10px;
+$marges-nav : 0px 0px 50px 0px;
+$marges-couple-resto : 50px 0px 0px 0px;
+$marges-cadre : (
+    exterieur : 0px,
+    interieur : 20px
+) ;
+$marges-nom-resto : 20px 0px 20px 0px;
+$marges-bouton : 0px 0px 100px 0px;
+
+$marge-titre-page : 50px;
+
+$sectionMenu : (
+    exterieur : 0px 100px 100px 100px,
+    interieur : 50px,
+    petit-exterieur : 20px 20px 100px 20px
+);
+
+$marges-categorie : 20px;
+
+$marges-titre : 0px 30px 0px 30px;
+
+$marge-separateur : 50px;
+
+$marges-plats-prix : 50px;

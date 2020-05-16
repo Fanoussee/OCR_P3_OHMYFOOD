@@ -1,0 +1,140 @@
+@mixin styleNomResto($nomResto){
+    $police : map-get($police-resto, $nomResto);
+    $size : map-get($taille-nom-resto, $nomResto);
+    $color : map-get($coul-resto, $nomResto);
+    .nom-resto{
+        @if($nomResto == chic){
+            @include degraderCouleurs(
+                -40deg,
+                map-get($coul-chic, entrees),
+                map-get($coul-chic, desserts)
+            );
+        }
+        @if($nomResto == palette){
+            @include degraderCouleurs(
+                -40deg,
+                map-get($coul-palette, coul1),
+                map-get($coul-palette, coul2)
+            );
+        }
+        @include style($police,$size,$color);
+        @include mobile{
+            font-size: reduireTaille($size);
+        }
+    }
+    .grand{
+        $size : agrandirTaille($size);
+        font-size: $size;
+        @include mobile{
+            font-size: reduireTaille($size);
+        }
+    }
+}
+
+@mixin styleMotMenu($nomResto){
+    $police : map-get($police-menu, $nomResto);
+    $size : map-get($taille-mot-menu, $nomResto);
+    $color : map-get($coul-menu, $nomResto);
+    .mot-menu{
+        @if($nomResto == chic){
+            $color : styleChicEntrees();
+        }
+        @include style($police, $size, $color);
+        font-weight: bold;
+        @include mobile{
+            font-size: reduireTaille($size);
+        }
+    }
+}
+
+@mixin styleChic($nom){
+    @if ($nom == chic) {
+        .entrees{
+            $color : styleChicEntrees();
+            .titre, .noms-plats, .prix{
+                color : $color;
+            }
+            .soulignement{
+                background-color: $color;
+            }
+        }
+        .plats{
+            $color : styleChicPlats();
+            .titre, .noms-plats, .prix{
+                color : $color;
+            }
+            .soulignement{
+                background-color: $color;
+            }
+        }
+        .desserts{
+            $color : styleChicDesserts();
+            .titre, .noms-plats, .prix{
+                color : $color;
+            }
+            .soulignement{
+                background-color: $color;
+            }
+        }
+    }   
+}
+
+@mixin styleTitre($nomResto){
+    $police : map-get($police-titre, $nomResto);
+    $size : map-get($taille-titre, $nomResto);
+    $color : map-get($coul-titre, $nomResto);
+    .titre{
+        @include style($police, $size, $color);
+        @include mobile{
+            font-size: reduireTaille($size);
+        }
+    }
+    .soulignement{
+        background-color: $color;
+    }
+}
+
+@mixin stylePlatsPrix($nomResto){
+    $police : map-get($police-plats-prix, $nomResto);
+    $size : map-get($taille-plats-prix, $nomResto);
+    $color : map-get($coul-plats-prix, $nomResto);
+    .noms-plats, .prix{
+        @include style($police, $size, $color);
+        @include mobile{
+            font-size: reduireTaille($size);
+        }
+    }
+}
+
+@mixin styleNoteMusique{
+    .musique{
+        @include degraderCouleurs(
+            left,
+            map-get($coul-music, coul1),
+            map-get($coul-music, coul2)
+        );
+        font-size: $taille-music;
+        @include mobile{
+            font-size: reduireTaille($taille-music);
+        }
+    }
+    .petit{
+        $size-music : reduireTaille($taille-music);
+        font-size: $size-music;
+        @include mobile{
+            font-size: reduireTaille($size-music);
+        }
+    }
+}
+
+@mixin styleResto($nomResto){
+    background-color: map-get($coul-fond, $nomResto);
+    @include styleNomResto($nomResto);
+    @include styleMotMenu($nomResto);
+    @include styleTitre($nomResto);
+    @include stylePlatsPrix($nomResto);
+    @if($nomResto == note){
+        @include styleNoteMusique;
+    }
+    @include styleChic($nomResto);
+}

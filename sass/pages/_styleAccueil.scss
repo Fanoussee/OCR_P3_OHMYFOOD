@@ -1,0 +1,37 @@
+nav {
+    @include flex(row);
+    @include ordi{
+        @include flex(column);
+    }
+    margin: $marges-nav;
+    & .couple-resto{
+        @include flex(row);
+        @include tablette{
+            @include flex(column);
+        }
+        margin: $marges-couple-resto;
+        & .cadre{
+            $largeur : map-get($dimensions-cadre, largeur);
+            $hauteur : map-get($dimensions-cadre, hauteur);
+            $exterieur : map-get($marges-cadre, exterieur);
+            $interieur : map-get($marges-cadre, interieur);
+            @include flex(row) ;
+            @include dimensions($largeur, $hauteur);
+            @include marges($exterieur, $interieur);
+            @include bordureArrondie(5px, solid, $coul-ombre, 5px);
+            & a {
+                transition: all 500ms;
+                &:hover{
+                    transform: scale(1.2);
+                    opacity: 0.6;
+                }
+            }
+            @include mobile{
+                @include dimensions (
+                    reduireTaille($largeur),
+                    reduireTaille($hauteur)
+                );
+            }
+        }
+    }
+}

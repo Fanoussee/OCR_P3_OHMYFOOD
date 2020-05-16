@@ -1,0 +1,68 @@
+.nom-resto{
+    margin: $marges-nom-resto;
+}
+.sectionMenu{
+    @include flex(column);
+    $interieur : map-get($sectionMenu, interieur);
+    $exterieur : map-get($sectionMenu, exterieur);
+    @include marges($interieur, $exterieur);
+    @include petitOrdi{
+        @include marges(0, map-get($sectionMenu, petit-exterieur));
+    }
+    & .categorie{
+        width: 100%;
+        @include marges(0, $marges-categorie);
+
+        & .titre{
+            @include flex(row, space-between);
+            @include marges(0, $marges-titre);
+            font-weight: bold;
+            & .titre-souligne{
+                cursor: default;
+                width : auto;
+                & .soulignement{
+                    @include souligner();
+                    transition: all 400ms ease-in-out;
+                }
+                &:hover .soulignement{
+                    transform: scaleX(1);
+                }
+            }
+            @include tablette{
+                @include flex();
+            }
+        }
+    }
+}
+.separateur{
+    $largeur : map-get($dimensions-separateur, largeur);
+    $hauteur : map-get($dimensions-separateur, hauteur);
+    @include dimensions($largeur, $hauteur);
+    & .debut{
+        margin-right: $marge-separateur;
+    }
+    & .fin{
+        margin-left: $marge-separateur;
+    }
+    @include tablette{
+        display: none;
+    }
+}
+.plats_prix{
+    @include flex(row, space-between, stretch);
+    display: flex;
+    @include marges(0, $marges-plats-prix);
+    @include tablette{
+        @include marges(0, reduireTaille($marges-plats-prix)/2);
+    }
+    & .noms-plats{
+        @include flex(column, space-between, flex-start);
+        text-align: left;
+        margin-right: 20px;
+    }
+    & .prix{
+        @include flex(column, space-between);
+        font-weight: bold;
+        text-align: right;
+    }
+}

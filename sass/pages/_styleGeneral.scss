@@ -1,0 +1,60 @@
+body{
+    @include marges();
+    font-family: $polices-site;
+    text-align: center;
+}
+h1, h2, h3{
+    @include marges();
+    font-weight: normal;
+}
+a, header{
+    color: $coul-site;
+    text-decoration: none;
+}
+a, .lien {
+    outline-style: none;
+}
+header, .lien, footer{
+    @include marges($contourLiens);
+    background-color: map-get($coul-fond, site);
+    border: none;
+}
+i{
+    @include marges(0px, $contourLiens);
+}
+.txt-logo{
+    font-size: $taille-logo;
+    font-weight: bold;
+    @include mobile{
+        font-size: reduireTaille($taille-logo);
+    }
+}
+.titrePage{
+    font-size: $taille-titre-page;
+    text-align: center;
+    @include marges(0px, $marge-titre-page);
+    @include mobile{
+        display: none;
+    }
+}
+.mentions, .prochainement{
+    display: inline;
+}
+section{
+    @include flex();
+}
+footer{
+    font-size: $taille-footer;
+    @include mobile{
+        font-size: reduireTaille($taille-footer);
+    }
+    @include bandeauFixeBas();
+    & .liens{
+        @include flex(row, space-between);
+        & a{
+            &:hover{
+                @include animer(secouer, 400ms, 0s, ease-in-out);
+            }
+        }
+    }
+}
